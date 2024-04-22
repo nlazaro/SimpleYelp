@@ -8,5 +8,5 @@ interface YelpService {
     @GET("businesses/search")
     fun searchRestaurants(
         @Query("term") searchTerm: String,
-        @Query("location") location: String) : Call<Any>
+        @Query("location") location: String) : Call<YelpSearchResult>
 }

@@ -38,14 +38,14 @@ class MainActivity : AppCompatActivity() {
             yelpService.searchRestaurants(
                 "Avocado Toast",
                 "NYC"
-            ).enqueue(object : Callback<Any> {
-                override fun onResponse(call: Call<Any>, response: Response<Any>) {
+            ).enqueue(object : Callback<YelpSearchResult> {
+                override fun onResponse(call: Call<YelpSearchResult>, response: Response<YelpSearchResult>) {
                     Log.i(TAG, "onResponse $response")
                     Toast.makeText(this@MainActivity, "Response: $response", Toast.LENGTH_SHORT)
                         .show()
                 }
 
-                override fun onFailure(call: Call<Any>, throwable: Throwable) {
+                override fun onFailure(call: Call<YelpSearchResult>, throwable: Throwable) {
                     Log.i(TAG, "onFailure $throwable")
                 }
             })
