@@ -2,7 +2,7 @@
 
 ### Description
 - An app that allows users to search for restuarant reviews in a given location.
-- Purpose of this app was to learn about recycler view and using retrofit for http calls.
+- Purpose of this app was to learn about recycler view, using retrofit for http calls, and hiding API keys.
 - **Category:* Food*
 
 ### Open-source libraries used
